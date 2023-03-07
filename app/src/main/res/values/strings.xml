@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AssignmentTrackingApp</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="login">LOGIN</string>
+    <string name="teacher_username">Teacher Username</string>
+    <string name="teacher_login_page">Teacher Login Page</string>
+    <string name="teacher_registration_page">Teacher Registration Page</string>
+</resources>

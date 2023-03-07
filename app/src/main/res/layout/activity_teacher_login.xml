@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherLogin">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/vamk"/>
+
+    <TextView
+        android:id="@+id/teacherLoginPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/teacher_login_page"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/logo"/>
+
+    <TextView
+        android:id="@+id/registerLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teacherLoginPage"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="If not registered, Click here"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/teacherEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerLink"
+        android:hint="@string/teacher_username"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:inputType="text"
+        android:theme="@style/MyEditTextStyle"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teacherEditText"
+        android:layout_margin="20dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:theme="@style/MyEditTextStyle"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/teacherLoginBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#CFCFCF"
+        android:text="@string/login"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/teacherLoginError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

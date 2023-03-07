@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:conntext=".StudentEnroll">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/vamk"/>
+
+    <TextView
+        android:id="@+id/courseEnrollment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Course Enrollment Page"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseEnrollment"
+        android:layout_margin="20dp"
+        android:hint="First Name"
+        android:padding="10dp"
+        android:inputType="text"
+        android:theme="@style/MyEditTextStyle"/>
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstName"
+        android:layout_margin="20dp"
+        android:hint="Last Name"
+        android:padding="10dp"
+        android:inputType="text"
+        android:theme="@style/MyEditTextStyle"/>
+
+    <EditText
+        android:id="@+id/coursePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastName"
+        android:layout_margin="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:theme="@style/MyEditTextStyle"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/teacherLoginBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coursePassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#CFCFCF"
+        android:text="Enroll"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

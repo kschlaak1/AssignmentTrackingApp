@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentRegistration">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/vamk"/>
+
+    <TextView
+        android:id="@+id/studentRegistrationPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Student Login Page"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/studentUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studentRegistrationPage"
+        android:layout_margin="20dp"
+        android:hint="Student Username"
+        android:inputType="text"
+        android:padding="10dp"
+        android:theme="@style/MyEditTextStyle" />
+
+    <EditText
+        android:id="@+id/studentFirstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studentUsername"
+        android:layout_margin="20dp"
+        android:hint="First Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:theme="@style/MyEditTextStyle" />
+
+    <EditText
+        android:id="@+id/studentLastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studentFirstname"
+        android:layout_margin="20dp"
+        android:hint="Last Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:theme="@style/MyEditTextStyle" />
+
+    <EditText
+        android:id="@+id/studentPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studentLastname"
+        android:layout_margin="20dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:theme="@style/MyEditTextStyle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/studentRegistrationBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studentPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#CFCFCF"
+        android:text="Register"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
