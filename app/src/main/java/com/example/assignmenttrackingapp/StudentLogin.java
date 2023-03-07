@@ -84,7 +84,7 @@ public class StudentLogin extends AppCompatActivity {
                             data[0] = username;
                             data[1] = password;
 
-                            PutData putData = new PutData("http://10.0.0.149/AssignmentTrackingApp/studentLogin.php", "POST", field, data);
+                            PutData putData = new PutData("http://10.0.0.149/AssignmentTracking/AssignmentTrackingScripts/studentLogin.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();

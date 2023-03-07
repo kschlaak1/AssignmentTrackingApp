@@ -56,7 +56,7 @@ public class StudentRegistration extends AppCompatActivity {
                             data[2] = lastname;
                             data[3] = password;
                             data[4] = table;
-                            PutData putData = new PutData("http://10.0.0.149/AssignmentTrackingApp/studentRegistration.php", "POST", field, data);
+                            PutData putData = new PutData("http://10.0.0.149/AssignmentTracking/AssignmentTrackingScripts/studentRegistration.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();

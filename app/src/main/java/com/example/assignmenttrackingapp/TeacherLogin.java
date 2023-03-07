@@ -98,7 +98,7 @@ public class TeacherLogin extends AppCompatActivity {
                 params.put("table", table);
 
                 // returns the response
-                String teacher_login_url = "http://10.0.0.149/AssignmentTrackingApp/teacherLogin.php";
+                String teacher_login_url = "http://10.0.0.149/AssignmentTracking/AssignmentTrackingScripts/teacherLogin.php";
                 return requestHandler.sendPostRequest(teacher_login_url, params);
             }
 

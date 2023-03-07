@@ -99,7 +99,7 @@ public class TeacherRegistration extends AppCompatActivity {
                 params.put("table", table);
 
                 // returns the response
-                String teacher_register_url = "http://10.0.0.149/AssignmentTrackingApp/teacherRegistration.php";
+                String teacher_register_url = "http://10.0.0.149/AssignmentTracking/AssignmentTrackingScripts/teacherRegistration.php";
                 return requestHandler.sendPostRequest(teacher_register_url, params);
             }
 
